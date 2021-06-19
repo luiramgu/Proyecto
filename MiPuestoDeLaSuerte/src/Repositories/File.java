@@ -36,6 +36,7 @@ public class File implements Repositorio{
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(Loteria_PATH, true));
             writer.append(text);
+            writer.newLine();
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();
@@ -51,6 +52,7 @@ public class File implements Repositorio{
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(Tiempos_PATH, true));
             writer.append(text);
+            writer.newLine();
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();
